@@ -1,29 +1,137 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Making my GitHub Pages Site</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ShinySec[dot]org</title>
+
+<meta name="description" content="An open library of information assurance and cybersecurity resources, publications, and instructional materials by Shiny Sentry.">
+
+<link rel="icon" href="img/favicon.ico">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Header 1</h1>
-    <p>GitHub Pages website</p>
-  </header>
+<div class="window">
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>Editing content</p>
-    </section>
+<div class="title-bar">
+    <div class="title-left">
+        <img src="img/logo.png" alt="ShinySec logo">
+        ShinySec[dot]org Homepage
+    </div>
+    <div class="title-buttons" aria-hidden="true">
+        <span>_</span><span>□</span><span>X</span>
+    </div>
+</div>
 
-  </main>
+<main class="content">
 
-  <footer>
-    <p>Site by Shiny Sentry</p>
-  </footer>
+    <!-- ABOUT -->
+    <div class="group">
+        <div class="group-title">About</div>
+        <div class="profile">
+            <img src="img/profile.png" alt="Shield displaying a medium gray sparkle icon over a solid white shield with thin gray inner piping." width="120" height="120">
+            <p>
+                Welcome to ShinySec[dot]org! This site hosts a library of public works created by Shiny Sentry. It catalogs themed collections of resources relating to information assurance and security. All publications here are open, auditable, and intended for instructional use. 
+                <a href="about.html">Continue reading...</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="group">
+        <div class="group-title">Browse Content by Category</div>
+
+        <div class="button-bar">
+            <a href="longform.html" class="btn">📚 Longform Content</a>
+            <a href="study.html" class="btn">🎓 Study Packages</a>
+            <a href="presentations.html" class="btn">📺 Presentations</a>
+            <a href="communications.html" class="btn">📣 Communications</a>
+        </div>
+
+        <div class="button-bar">
+            <a href="demos.html" class="btn">🧭 Interactive Demos</a>
+            <a href="press.html" class="btn">🏛️ Press Kit & Legal Documents</a>
+        </div>
+    </div>
+
+    <!-- FEATURED -->
+    <div class="group">
+        <div class="group-title">Quick Links to Featured Projects</div>
+
+        <div class="featured-grid">
+
+            <a href="https://github.com/shinysentry1137/iais-fundamentals" class="featured-item" target="_blank" rel="noopener noreferrer">
+                <img src="img/feature1.png" alt="A slightly off-center stack of books turned to obscure the spines. They are isolated in a deep magenta background.">
+                <span>Fundamentals of IA / Infosec Textbook</span>
+            </a>
+
+            <a href="https://github.com/shinysentry1137/iam-concepts" class="featured-item" target="_blank" rel="noopener noreferrer">
+                <img src="img/feature2.png" alt="A vintage typewriter with a gray body and black detailing, holding a sheet of blank white paper. It is isolated in a vibrant yellow background.">
+                <span>Open IAM Concept Gallery</span>
+            </a>
+
+            <a href="https://github.com/shinysentry1137/homelab" class="featured-item" target="_blank" rel="noopener noreferrer">
+                <img src="img/feature3.png" alt="A person's hand holding cables of various sizes and colors, wrapped in a coil. They are isolated in a bright green background.">
+                <span>Shiny Sentry’s Homelab Setup</span>
+            </a>
+
+            <a href="https://github.com/shinysentry1137/intro-infosec-roadmap" class="featured-item" target="_blank" rel="noopener noreferrer">
+                <img src="img/feature4.png" alt="A pile of identical white floppy disks grouped together. They are isolated in a cool purple-blue background.">
+                <span>"Introduction to Infosec" Roadmap</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- PARTNER -->
+    <div class="group">
+        <div class="group-title">Trusted Partner</div>
+
+        <div class="profile">
+            <img src="img/partner.png" alt="Shield displaying a letter 'S' over a deep red gradient fading into black with white contrasting outlines. The top forms a castle tower shape." width="120" height="120">
+            <p>
+                <strong>Skarlet Corporation</strong> - Tailored IT management solutions for small businesses.
+                Owner Jennifer Milford is a frequent collaborator in infosec research and community education. 
+                View her 
+                <a href="https://skarlet.org/" target="_blank" rel="noopener noreferrer">Official Website</a> 
+                or explore our 
+                <a href="skarletshared.html" onclick="return false;" aria-disabled="true">Shared Works</a>.
+            </p>
+        </div>
+    </div>
+
+    <!-- MIRRORS -->
+    <div class="group">
+        <div class="group-title">Active Mirrors & Media</div>
+        <p>
+            Content hosted on ShinySec is distributed across multiple platforms to ensure availability, redundancy, and long-term access. These platforms are intentionally selected to act as independent mirrors in case others become unavailable. 
+            <a href="mirrors.html">Learn more about how and why these are used.</a>
+        </p>
+
+        <div class="button-bar">
+            <a href="https://archive.org/" class="btn" target="_blank" rel="noopener noreferrer">🗃️ Internet Archive</a>
+            <a href="https://github.com/" class="btn" target="_blank" rel="noopener noreferrer">📦 GitHub</a>
+            <a href="https://codeberg.org/" class="btn" target="_blank" rel="noopener noreferrer">📦 Codeberg</a>
+        </div>
+
+        <div class="button-bar">
+            <a href="#" class="btn" onclick="return false;" aria-disabled="true">📺 (Coming Soon)</a>
+            <a href="#" class="btn" onclick="return false;" aria-disabled="true">📺 (Coming Soon)</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        ShinySec[dot]org | Copyleft 2026 Shiny Sentry | All Rights Reversed, All Wrongs Reserved
+    </div>
+
+</main>
+
+</div>
 
 </body>
 </html>
