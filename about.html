@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - ShinySec</title>
 
+<style>
+    body {
+        margin: 0;
+        font-family: "MS Sans Serif", Tahoma, sans-serif;
+        font-size: 12px;
+
+        background:
+            linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("img/background.gif") no-repeat center center fixed;
+
+        background-size: cover;
+    }
+
+    .window {
+        max-width: 900px;
+        width: 95%;
+        margin: 20px auto;
+        border: 2px solid #ffffff;
+        border-right-color: #404040;
+        border-bottom-color: #404040;
+        background: #c0c0c0;
+    }
+
+    .title-bar {
+        background: linear-gradient(to right, #404040, #c0c0c0);
+        color: white;
+        padding: 4px 6px;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .group {
+        border: 2px solid #808080;
+        border-top-color: #ffffff;
+        border-left-color: #ffffff;
+        margin-bottom: 15px;
+        padding: 10px;
+        background: #c0c0c0;
+    }
+
+    .page-header {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .profile {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .profile img {
+        width: 64px;
+        height: 64px;
+        border: 2px inset #fff;
+        background: #e0e0e0;
+        flex-shrink: 0;
+    }
+
+    a {
+        color: #0000aa;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        background: #c0c0c0;
+        border: 2px solid #fff;
+        border-right-color: #404040;
+        border-bottom-color: #404040;
+        text-decoration: none;
+        color: black;
+    }
+
+    .btn:hover {
+        background: #d4d0c8;
+    }
+
+    .btn:active {
+        border: 2px solid #404040;
+        border-right-color: #fff;
+        border-bottom-color: #fff;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 11px;
+        padding: 10px;
+        border-top: 2px solid #808080;
+    }
+
+    @media (max-width: 600px) {
+        .profile {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="window">
+
+    <div class="title-bar">
+        ℹ️ About ShinySec
+    </div>
+
+    <div class="content">
+
+        <a href="index.html" class="btn">⬅ Back to Home</a>
+
+        <!-- SHINYSEC -->
+        <div class="group">
+            <div class="page-header">ShinySec as an Initiative</div>
+
+            <p>
+                I created ShinySec as a centralized place to publish and organize my educational work
+                in information assurance and sometimes cybersecurity.
+            </p>
+
+            <p>
+                A big part of why this exists is because I wanted advanced concepts in security to be
+                more accessible. Especially for people working in roles where security education is part of your tasks, like graduate study programs
+                or intelligence-adjacent environments.
+            </p>
+
+            <p>
+                A lot of cybersecurity content focuses on vendor tools or surface-level practices.
+                I care more about the underlying reasoning, like how trust works, why controls exist,
+                and how systems actually hold up under real human conditions.
+            </p>
+
+            <p>
+                That’s where information assurance comes in, and it’s something I think the field
+                overlooks more often than it should.
+            </p>
+        </div>
+
+        <!-- PHILOSOPHY -->
+        <div class="group">
+            <div class="page-header">Philosophy & Approach</div>
+
+            <p>
+                I built ShinySec mostly out of frustration with how modern security concepts are being taught.
+            </p>
+
+            <p>
+                When I was first starting, a lot of the material I needed either didn’t exist or was locked
+                behind paywalls, private groups, or had really unclear paths. That slowed down a lot more people than I assumed, so I decided research what it would take to create an open access library of the works I've created (mostly intended to help educators).
+            </p>
+
+            <p>
+                That's why I’ve made a deliberate decision to keep everything here publicly
+                available, auditable, and freely distributed.
+            </p>
+
+            <p>
+                I don’t do gated content or exclusivity. The goal is to make high-quality material
+                accessible without barriers, and to contribute something back to the space that I
+                didn’t have when I started.
+            </p>
+        </div>
+
+        <!-- YOU -->
+        <div class="group">
+            <div class="page-header">About Me</div>
+
+            <div class="profile">
+                <img src="img/pfp.png" alt="">
+                <p>
+                    I’m Shiny Sentry, the founder of ShinySec and soon to be Editor-in-Chief of
+                    <strong>UNASSURED Media</strong>. I'm interested in all things defensive security, especially anything to do with policy management and GRC.
+                </p>
+            </div>
+
+            <p>
+                My work focuses on information assurance, governance, risk, and compliance (GRC),
+                with a particular interest in trustless system design and identity/access management.
+                Lately I’ve been exploring approaches that go beyond traditional zero trust models.
+            </p>
+
+            <p>
+                Outside of security, I’m into mutual aid, fantasy literature,
+                and digital illustration. I'm often experimenting with programming in my free time and finding ways to intersect these things.
+            </p>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            ShinySec[dot]org | Copyleft 2026 Shiny Sentry | All Rights Reversed, All Wrongs Reserved
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
